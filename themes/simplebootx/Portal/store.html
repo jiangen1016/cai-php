@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜大师 - 门店查询</title>
+    <tc_include file="Public:head" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=17eOMvLsul4j50OaWL9yB77StaZwkbGW"></script>
+</head>
+<body>
+<tc_include file="Public:nav" />
+<div id="store_main">
+    <div class="auto clear">
+        <div class="city">
+            <div class="clear citytop left">
+                <div>当前城市：<span>武汉</span><a href="">切换城市</a></div>
+                <ul class="citys">
+                    <li>武汉</li>
+                    <li>北京</li>
+                    <li>上海</li>
+                    <li>深圳</li>
+                </ul>
+            </div>
+            <form name="city" class="clear cityform left">
+                门店关键字：
+                <input type="text" placeholder="输入门店地址或门店名称" class="text">
+                <a href=""  class="submit">查询</a>
+            </form>
+        </div>
+        <div class="mapmenu clear">
+            <div class="storelist">
+                <p>查询结果：</p>
+                <div class="list">
+                    <div class="item clear">
+                        <img src="themes/simplebootx/Public/assets/images/address_03.jpg" alt="" class="icon">
+                        <div class="text">
+                            <p>菜大师南湖店</p>
+                            <p>地址：武汉市洪山区武昌府</p>
+                            <p>电话：027-99999999</p>
+                            <a href="">订餐</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <p>地图显示：</p>
+                <div id="dituContent">
+
+                </div>
+                <div class="activity">
+                    <a href="">店铺基本信息</a>
+                    <a href="" class="center">订餐方式</a>
+                    <a href="">最近活动</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<tc_include file="Public:footer" />
+</body>
+</html>
